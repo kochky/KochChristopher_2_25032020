@@ -1,26 +1,29 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    width:40%;
+    width:1440px;
+    height:100%;
     margin:auto;
-    line-height:0.5em;
+    line-height:18px;
     font-weight:500;
+    padding: 0px 70px 0px 70px;
 }
 a {
     color:black;
     text-decoration:none;
+    font-size:16px;
 }
 
 h1 {
-    font-size:1em;
+    font-size:20px;
     font-weight:800;
 }
 h2 {
-    font-size:0.75em;
-    font-weight:800
+    font-size:16px;
+    font-weight:800;
 }
 h3 {
-    font-size:0.7em;
+    font-size:15px;
     font-weight:500; 
 }
 span {
@@ -33,31 +36,32 @@ input::placeholder{
 }
 input {
     border:none;
+    padding-left:16px;
 }
 
 
 /*header*/
-
+#top h1 {
+    margin-bottom:16px;
+}
 #inscription {
     color:#0065FC;
     font-weight:bold;
 }
 #barnav {
     text-align:right;
-    padding-top:20px;
-       
+    padding-top:20px; 
+    
 }
 #barnav ul li {
     list-style: none;
     display:inline-block;
-    font-size:0.7em;
-    width:115px; 
-    height:30px; 
+    font-size:0.7em;   
 }
 #barnav ul li a:hover {
     border-top:1px solid #0065FC;
     color:#0065FC;
-    padding-top: 33px;
+    padding-top: 30px;
     }
 #logo {
     margin-bottom:30px;
@@ -70,17 +74,17 @@ input {
 
 #search {
     display:flex;
-    width:500px;
-    height:35px;
-    margin-bottom:20px;
-    margin-top:15px;
+    width:420px;
+    height:50px;
+    margin-bottom:30px;
+    margin-top:20px;
 }
 #search button {
     border-radius:0px 0.75em 0.75em 0px;
     border:none;
     background-color:  #0065FC;
     color:white;
-    width:90px;
+    width:135px;
     font-family: "raleway", sans-serif;
     font-weight:600;
     cursor: pointer;
@@ -95,7 +99,7 @@ input {
 }
 #searchicon {
     background-color:#F2F2F2 ;
-   width:35px;
+   width:50px;
    border-radius:0.75em 0px 0px 0.75em;
    display:flex;
    justify-content: center;
@@ -103,6 +107,7 @@ input {
 }
 #search input {
     border:1px solid #F2F2F2 ;
+    width:235px;
 }
 /*Barre de filtre*/
 
@@ -110,22 +115,22 @@ input {
 display:flex;
 justify-content:left;
 align-items: center;
-margin-bottom:5px;
+margin-bottom:20px;
 }
 
 #filters h2 {
     margin-right:25px;    
 }
 #filters button{
-    height:35px;
-    margin-right:20px;
+    height:50px;
+    margin-right:25px;
     padding: 0;
     display:flex;
     align-items: center;
     justify-content: space-between;
     background-color: white;
     border:2px solid #F2F2F2;
-    border-radius: 35px ;
+    border-radius: 50px ;
     font-family: "raleway", sans-serif;
     font-weight:500;
     font-size: 1em; 
@@ -135,10 +140,10 @@ margin-bottom:5px;
    
 }
 #filters button .fas {
-    border-radius: 35px;
+    border-radius: 505px;
     background-color: #DEEBFF;
-    width:35px;
-    height:35px;
+    width:50px;
+    height:50px;
     display:flex;
     align-items: center;
     justify-content:center;
@@ -148,15 +153,15 @@ margin-bottom:5px;
     
    
 }
-.jauge-remplissage {
+.jauge-remplissage { /*Permet la transition du changement de background de gauche à droite */
     transition: all 0.15s linear 0s;
     background-color: #DEEBFF;
-    width: 33px;
-    height: 33px;
+    width: 48px;
+    height: 48px;
     position: absolute;
     left: -2px;
     top: px;
-    opacity:0.4;
+    opacity:0.5;
     border: 1px solid #DEEBFF;
     border-radius: 35px ;
     display:flex;
@@ -166,7 +171,7 @@ margin-bottom:5px;
     
     
 }
-#filters button:hover .jauge-remplissage {
+#filters button:hover .jauge-remplissage { /*Au survol des filtres, la transition se fait*/
     width: 101%;
     height:110%;
     
@@ -182,19 +187,18 @@ margin-bottom:5px;
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-bottom:30px;
+    margin-bottom:25px;
     
 }
-.fa-info{
-    width:15px;
-    height:15px;
-    border-radius:15px;
+#logoinfo {
+    width:25px;
+    height:25px;
+    border-radius:25px;
     border: 2px solid #F2F2F2;
     display:flex;
     align-items: center;
     justify-content:center;
-    margin-right: 5px;   
-    font-size:xx-small;
+    margin-right: 5px;       
 }
 .fa-child, .fa-heart, .fa-dog, .fa-money-bill-wave, .fa-star, .fa-info  {
     color:#0065FC
@@ -207,5 +211,168 @@ margin-bottom:5px;
 
 
 /*Hebergements et Les plus populaires*/
+
+
+#hebergements {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    
+    
+}
+article {
+    background-color:#F2F2F2;
+    padding: 45px 40px;
+    border-radius:5%;
+    width:875px;
+    margin-right:40px;
+    
+}
+article h1 {
+    margin-bottom: 20px;
+}
+#afficher {
+    margin-top:15px;
+}
+
+#hebergementcontent{
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+
+.hotel {
+    width:250px;
+    border-radius: 15px;
+    border:5px solid white;
+    height:200px; 
+    margin-bottom:30px;
+    display:flex;
+    align-items:flex-end;
+}
+
+.hotelname{
+    width:250px;
+    height:80px;
+    background-color: white;
+    border-radius:0 0 10px 10px;
+    border:1px solid white;
+    padding-left:10px;
+    margin: -1px;
+    padding-bottom:10px;
+    line-height: 10px;
+}
+    
+#cannebiere {
+    background: url("images/hebergements/canebiere.jpg") no-repeat;
+    background-size:250px 120px;
+    border-radius:15px;
+}
+
+#port {
+    background: url("images/hebergements/port.jpg") no-repeat;
+    border-radius:15px;
+    background-size:250px 120px;
+    
+}
+#mouettes {
+    background:url("images/hebergements/mouettes.jpg") no-repeat;
+    border-radius:15px;
+    background-size:250px 120px;
+    
+}
+#mer {
+    background: url("images/hebergements/mer.jpg") no-repeat;
+    border-radius:15px;
+    background-size:250px 120px;
+    
+}
+#panier {
+    background: url("images/hebergements/panier.jpg") no-repeat;
+    border-radius:15px;
+    background-size:250px 120px;
+    
+}
+
+#amina {
+    background: url("images/hebergements/amina.jpg") no-repeat;
+    border-radius:15px;
+    background-size:250px 120px;
+    
+}
+
+aside {
+    background-color:#F2F2F2;
+    display:flex;
+    flex-direction:column;
+    border-radius:5%;
+    padding:45px 40px 0px 35px;
+    width:420px;
+    height:auto;
+}
+
+#title {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom:25px;
+        margin-right:40px;
+        
+}
+
+.pophotel {
+    border:5px solid white;
+    border-radius: 15px;
+    height: 145px;
+    margin-bottom:35px;
+    display:flex;
+    justify-content:flex-end;
+    width:355px;
+}
+.pophotelname {
+    width:170px;
+    padding-left:20px;
+    padding-bottom:15px;
+    padding-right:40px;
+    background-color: white;
+    margin:-1px 0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 0px;
+    
+}
+.pophotelname div h2 {
+    line-height:18px
+
+}
+
+#matin {
+    background: url("images/hebergements/soleil.jpg") no-repeat;
+    border-radius:15px;
+    background-size: contain;
+}
+
+#eau {
+    background: url("images/hebergements/eau.jpg") no-repeat;
+    border-radius:15px;
+    background-size:135px 145px;
+}
+
+#bleublanc {
+    background: url("images/hebergements/bleublanc.jpg") no-repeat;
+    border-radius:15px;
+    background-size:135px 145px;
+}
+/*Activités*/
+
+#activités {
+    display:flex
+}
+
+footer{
+    display:flex
+}
 
 
