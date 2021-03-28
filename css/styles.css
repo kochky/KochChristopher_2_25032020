@@ -2,7 +2,6 @@
 body {
     font-family: 'Raleway', sans-serif;
     width:1440px;
-    height:100%;
     margin:auto;
     line-height:18px;
     font-weight:500;
@@ -56,13 +55,16 @@ input {
 #barnav ul li {
     list-style: none;
     display:inline-block;
-    font-size:0.7em;   
+    font-size:0.7em;
+    margin-left:70px;   
 }
 #barnav ul li a:hover {
     border-top:1px solid #0065FC;
     color:#0065FC;
-    padding-top: 30px;
-    }
+    padding-top: 33px;
+    
+}
+
 #logo {
     margin-bottom:30px;
 }
@@ -119,11 +121,11 @@ margin-bottom:20px;
 }
 
 #filters h2 {
-    margin-right:25px;    
+    margin-right:30px;    
 }
 #filters button{
     height:50px;
-    margin-right:25px;
+    margin-right:30px;
     padding: 0;
     display:flex;
     align-items: center;
@@ -136,8 +138,9 @@ margin-bottom:20px;
     font-size: 1em; 
     cursor: pointer;
     position:relative;
-    
-   
+}
+#filters button h2 {
+    padding-left:12px;
 }
 #filters button .fas {
     border-radius: 505px;
@@ -229,7 +232,7 @@ article {
     
 }
 article h1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 #afficher {
     margin-top:15px;
@@ -250,6 +253,7 @@ article h1 {
     margin-bottom:30px;
     display:flex;
     align-items:flex-end;
+    box-shadow: 4px 4px 14px lightgrey;
 }
 
 .hotelname{
@@ -286,8 +290,8 @@ article h1 {
     background: url("images/hebergements/mer.jpg") no-repeat;
     border-radius:15px;
     background-size:250px 120px;
-    
 }
+
 #panier {
     background: url("images/hebergements/panier.jpg") no-repeat;
     border-radius:15px;
@@ -298,7 +302,9 @@ article h1 {
 #amina {
     background: url("images/hebergements/amina.jpg") no-repeat;
     border-radius:15px;
-    background-size:250px 120px;
+    background-size:250px auto;
+    background-position:bottom ;
+    
     
 }
 
@@ -329,6 +335,7 @@ aside {
     display:flex;
     justify-content:flex-end;
     width:355px;
+    box-shadow: 4px 4px 14px lightgrey;
 }
 .pophotelname {
     width:170px;
@@ -337,6 +344,7 @@ aside {
     padding-right:40px;
     background-color: white;
     margin:-1px 0px;
+    margin-right:-1px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -365,14 +373,109 @@ aside {
     border-radius:15px;
     background-size:135px 145px;
 }
+
+
 /*Activités*/
 
 #activités {
-    display:flex
+    margin-top:65px;
+    padding-bottom:15px
 }
 
+#activité h2{
+    height:55px;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    padding-left:20px;
+    display:flex;
+    align-items: center;
+    width:300px;
+    margin:-1px;
+
+}
+
+#activité {
+    height:445px;
+    width:100%;
+    border-radius:15px;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 5px repeat(88, 5px);
+}
+
+#activité div {
+    display:flex;
+    align-items: flex-end;
+    width:300px;
+    box-shadow: 4px 4px 14px lightgrey;
+}
+#vieuxport {
+    background:url("images/activites/vieuxport.jpg") no-repeat;
+    border-radius: 15px;
+    grid-column-start: 1;
+    grid-row: 1/span 89;
+    background-position: center;
+    background-size: 225%;
+   
+}
+
+#fortdepomègues {
+    background:url("images/activites/pomergues\ .jpg") no-repeat;
+   border-radius: 15px;
+    grid-column-start: 2;
+    grid-row:1/span 48;
+    background-position: center;
+    background-size: 100%;
+    
+}
+#ilesdufrioul {
+    background:url("images/activites/frioul.jpg") no-repeat;
+    border-radius: 15px;
+    grid-column-start: 2;
+    grid-row: 56/span 89;
+    background-position: center;
+    background-size: 100%;
+   
+}
+#parcnationaldescalanques {
+    background: url("images/activites/calanques.jpg") no-repeat;
+    border-radius: 15px;
+    grid-column-start:3;
+    grid-row: 1/span 89;
+    background-position: center;
+    background-size: 225%;
+    
+}
+#notredamedelagarde {
+    background: url("images/activites/notredame.jpg") no-repeat;
+    border-radius: 15px;
+    grid-column-start: 4;
+    grid-row: 1/span 40;
+    background-position: center;
+    background-size: 110%;
+    
+}
+#parclongchamps {
+    background: url("images/activites/longchamps.jpg") no-repeat;
+    border-radius: 15px;
+    grid-column-start:4;
+    grid-row:47/span 89;
+    background-size: cover;
+}
+
+
+
+
+
+/*footer */
+
+
+
+
+
 footer{
-    display:flex
+    display:flex;
+    background-color:#F2F2F2 ;
 }
 
 
