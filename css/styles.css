@@ -138,12 +138,14 @@ justify-content:left;
 align-items: center;
 margin-bottom:20px;
 }
-
+#buttons {
+    display:flex;
+}
 #filters h2 {
     margin-right:30px;    
 }
 
-#filters button{
+#filters div button{
     height:50px;
     margin-right:20px;
     padding: 0;
@@ -160,12 +162,12 @@ margin-bottom:20px;
     position:relative;
 }
 
-#filters button h2 {
+#filters div button h2 {
     padding-left:12px;
 }
 
-#filters button .fas {
-    border-radius: 505px;
+#filters div button .fas {
+    border-radius: 50px;
     background-color: #DEEBFF;
     width:50px;
     height:50px;
@@ -192,12 +194,12 @@ margin-bottom:20px;
     justify-content: space-between;    
 }
 
-#filters button:hover .jauge-remplissage { /*Au survol des filtres, la transition se fait*/
+#filters div button:hover .jauge-remplissage { /*Au survol des filtres, la transition se fait*/
     width: 101%;
     height:110%;   
 }
 
-#filters button:focus{
+#filters div button:focus{
     outline:0;
 }
 
@@ -477,7 +479,7 @@ aside {
     border-radius: 15px;
     grid-column-start: 2;
     grid-row: 56/span 89;
-    background-position: center;
+    background-position: contain;
     background-size: 100%;
    
 }
@@ -487,7 +489,7 @@ aside {
     border-radius: 15px;
     grid-column-start:3;
     grid-row: 1/span 89;
-    background-position: center;
+    background-position: contain;
     background-size: 225%;
     
 }
@@ -497,7 +499,7 @@ aside {
     border-radius: 15px;
     grid-column-start:4 ;
     grid-row: 1/span 40;
-    background-position: center;
+    background-position: contain;
     background-size: 110%;
     
 }
@@ -544,4 +546,131 @@ footer div ul li {
 
 footer div ul h2{
     margin-bottom:30px;
+}
+
+
+/*version mobile*/
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
+{
+    body {
+        width:768px;
+        
+    }
+    .container {
+        padding:20px;
+    }
+     
+    #filters {
+        width:768px;
+    }
+    #filters h2 {
+        margin-right:10px
+    }
+
+    #filters div button {
+    width: 160px;
+    margin-right:10px;
+    }
+    
+    #filters div button .fas {
+        width:50px;
+    }
+
+    #filters div button h2 {
+        padding:0px;
+        word-wrap: break-word;
+        width:110px;   
+    }
+    
+    #hebergements {
+        width:648px;
+        display:block;
+        height:auto;
+    }
+    
+    article {
+        margin-right:0px;
+        width:648px;
+        margin-bottom:50px;
+    }
+    #hebergementcontent {
+        justify-content:space-around;
+        margin-top:50px;
+
+    }
+    aside {
+        width: 668px;
+        padding:40px;
+    }
+    #title {
+        margin-bottom:30px;
+        
+    }
+    #title i {
+        margin:auto;
+        
+    }
+    aside a {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #activités {
+        width:648px;
+        padding-left:50px;
+        margin-top:100px;
+    }
+    
+    #activité {
+        width:648px;
+        height:930px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr repeat(27,1fr) 
+        }
+    
+    #activité a {
+        width:250px;
+        margin-top:30px;
+
+    }
+    
+    #vieuxport {
+        grid-column-start: 1;
+        grid-row: 1/12;
+        
+    }
+    #fortdepomègues {
+        grid-column-start:2 ;
+        grid-row: 1/8;
+    }
+    #ilesdufrioul {
+        grid-column-start:2 ;
+        grid-row: 8/14;
+        
+    }
+    #parcnationaldescalanques {
+        grid-column-start:2 ;
+        grid-row: 14/27;
+       
+    }
+    #notredamedelagarde {
+        grid-column-start:1 ;
+        grid-row:12/19;
+        
+    }
+    #parclongchamps {
+        grid-column-start:1 ;
+        grid-row: 19/27;
+        
+    }
+   footer {
+    width:768px
+    }
+    footer div {
+        width:748px;
+        justify-content: space-around;
+    }
 }
