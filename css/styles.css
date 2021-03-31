@@ -721,7 +721,7 @@ footer div ul h2{
     body {
         width:375px;
         padding-top:20px;
-        margin:0;
+        margin:auto;
         padding:0;  
     }
 
@@ -891,12 +891,12 @@ footer div ul h2{
         width:335px;
     }
     footer {
-        width:375px;
+        width:100%;
         height:auto;
     }
 
     footer div {
-        width:375px;
+        width: 375px;
         flex-direction: column;
     }
     footer div ul h2{
