@@ -549,8 +549,10 @@ footer div ul li {
     
 }
 
-footer div ul h2{
+.espaceliste {
     margin-bottom:30px;
+    font-size:16px;
+    font-weight:800;
 }
 
 
