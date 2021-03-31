@@ -23,14 +23,19 @@ h1 {
 }
 
 h2 {
+    font-size:20px;
+    font-weight:800;
+}
+h3 {
     font-size:16px;
     font-weight:800;
 }
 
-h3 {
+h4 {
     font-size:15px;
     font-weight:500; 
 }
+
 
 span {
     font-weight: 800;
@@ -146,7 +151,7 @@ margin-bottom:20px;
 #buttons {
     display:flex;
 }
-#filters h2 {
+#filters h3 {
     margin-right:30px;    
 }
 
@@ -182,7 +187,7 @@ margin-bottom:20px;
     width: 101%;
     height:110%;   
 }
-.button h2 {
+.button h3 {
     padding-left:12px;
 }
 
@@ -258,7 +263,7 @@ article {
     
 }
 
-article h1 {
+article h2 {
     margin-bottom: 30px;
 }
 
@@ -284,14 +289,14 @@ article h1 {
 
 }
 
-.hotelname{
+.hotelname {
     width:227px;
     height:70px;
     background-color: white;
     border-radius:0 0 10px 10px;
     padding-left:10px;
     padding-bottom:10px;
-    line-height: 10px;
+    line-height: 1px;
     margin: 0 -1px -1px -1px;
 }
     
@@ -386,7 +391,7 @@ aside {
     border-radius:5%;  
 }
 
-.pophotelname div h2 {
+.pophotelname div h3 {
     line-height:18px
 }
 
@@ -427,7 +432,7 @@ aside {
     margin-bottom:25px;
 }
 
-#activité h2{
+#activité h3{
     height:55px;
     background-color: white;
     border-radius: 0 0 15px 15px;
@@ -572,7 +577,7 @@ footer div ul li {
     #filters {
         width:768px;
     }
-    #filters h2 {
+    #filters h3 {
         margin-right:10px
     }
 
@@ -583,9 +588,10 @@ footer div ul li {
     
     .button .fas {
         width:50px;
+        left:0px;
     }
 
-    .button h2 {
+    .button h3 {
         padding:0px;
         word-wrap: break-word;
         width:110px;   
@@ -601,9 +607,9 @@ footer div ul li {
     article {
         margin-right:0px;
         width:768px;
-        
         padding:10px 10px;
     }
+    
     #hebergementcontent {
         justify-content:space-around;
         margin-top:50px;
@@ -635,11 +641,9 @@ footer div ul li {
         padding-left:5px;
         justify-content: space-between;
         margin:0;
-        
-        
-        
+
     }
-    .hotelname div h2 {
+    .hotelname div h3 {
         line-height:14px
     }
     
@@ -838,13 +842,14 @@ footer div ul li {
         margin:0;
         padding-left:20px;
         padding-top:15px;
+        padding-bottom:50px;
         order:2;
         background-color:white;
     }
     #hebergementcontent {
         flex-direction: column;
     }
-    article h1 {
+    article h2 {
         margin-bottom: 20px;
     }
     .hotel{
@@ -889,7 +894,7 @@ footer div ul li {
         height:190px;
         margin-bottom:20px;
     }
-    #activité h2 {
+    #activité h3 {
         width:335px;
     }
     footer {
@@ -901,7 +906,7 @@ footer div ul li {
         width:375px;
         flex-direction: column;
     }
-    footer div ul h2{
+    .espaceliste{
         margin-bottom:20px;
     }
 
