@@ -563,6 +563,7 @@ footer div ul h2{
 {
     body {
         width:768px;
+        margin:auto;
        }
     .container {
         padding:20px;
@@ -705,11 +706,12 @@ footer div ul h2{
         
     }
    footer {
-    width:768px
+    width:100%;
     }
     footer div {
         width:748px;
         justify-content: space-around;
+        margin:auto;
     }
 }
 
@@ -719,7 +721,7 @@ footer div ul h2{
 @media only screen and (max-device-width : 767px) 
 {
     body {
-        width:375px;
+        width:auto;
         padding-top:20px;
         margin:auto;
         padding:0;  
@@ -873,7 +875,7 @@ footer div ul h2{
 
     #activités {
         width:375px;
-        margin-top:0px;
+        margin-top:20px;
         padding:0 20px 0 20px;
     }
     #activité {
@@ -891,12 +893,12 @@ footer div ul h2{
         width:335px;
     }
     footer {
-        width:100%;
+        width:375px;
         height:auto;
     }
 
     footer div {
-        width: 375px;
+        width:375px;
         flex-direction: column;
     }
     footer div ul h2{
