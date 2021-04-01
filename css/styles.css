@@ -52,7 +52,9 @@ input {
     border:none;
     padding-left:16px;
 }
-
+#hebergements h1 {
+    display: none;
+}
 
 /*header*/
 #top h1 {
@@ -639,10 +641,16 @@ footer div ul li {
         height:145px;
         line-height: 14px; 
         padding-left:5px;
-        justify-content: space-between;
+        justify-content:flex-start;
         margin:0;
+        position:relative;
 
     }
+    #étoile {
+        position: absolute;
+        top:125px;
+    }
+   
     .hotelname div h3 {
         line-height:14px
     }
