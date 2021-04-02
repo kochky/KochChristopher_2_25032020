@@ -200,9 +200,7 @@ margin-bottom:20px;
     height: 48px;
     position: absolute;
     left: -2px;
-    top: px;
     opacity:0.5;
-    border: 1px solid #DEEBFF;
     border-radius: 35px ;
     display:flex;
     align-items: center;
@@ -489,7 +487,6 @@ aside {
     border-radius: 15px;
     grid-column-start: 2;
     grid-row: 56/span 89;
-    background-position: contain;
     background-size: 100%;
    
 }
@@ -499,7 +496,6 @@ aside {
     border-radius: 15px;
     grid-column-start:3;
     grid-row: 1/span 89;
-    background-position: contain;
     background-size: 225%;
     
 }
@@ -509,7 +505,6 @@ aside {
     border-radius: 15px;
     grid-column-start:4 ;
     grid-row: 1/span 40;
-    background-position: contain;
     background-size: 110%;
     
 }
@@ -569,7 +564,7 @@ footer div ul li a {
 
 
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) 
+@media only screen and (min-width : 768px) and (max-width : 1024px) 
 {
     body {
         width:768px;
@@ -733,7 +728,7 @@ footer div ul li a {
 
 
 
-@media only screen and (max-device-width : 767px) 
+@media only screen and (max-width : 767px) 
 {
     body {
         width:auto;
@@ -754,10 +749,8 @@ footer div ul li a {
         display:flex;
         width:375px;
         flex-wrap:wrap;
-        flex-direction: space-between;
-        
-        
-    }
+        justify-content: space-between;
+        }
     #barnav {
         text-align:right;
         padding-top:0px;
@@ -768,7 +761,7 @@ footer div ul li a {
         display:flex;
         order:3;
         width:375px;
-        flex-direction: space-around;
+        justify-content: space-around;
         
     }
     .soulignement {
