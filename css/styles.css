@@ -8,7 +8,8 @@ body {
 }
 
 .container {
-    padding:0px 50px 0px 50px;
+    width:1340px;
+    margin:auto;
 }
 
 a {
@@ -258,7 +259,7 @@ article {
     background-color:#F2F2F2;
     padding: 10px 40px;
     border-radius:15px;
-    width:875px; 
+    width:835px; 
     margin-right:45px; 
     
 }
@@ -281,7 +282,7 @@ article h2 {
     width:235px;
     border-radius: 15px;
     border:5px solid white;
-    height:190px; 
+    height:200px; 
     margin-bottom:35px ;
     box-shadow: 4px 4px 14px lightgrey;
     display:flex;
@@ -291,7 +292,7 @@ article h2 {
 
 .hotelname {
     width:227px;
-    height:70px;
+    height:75px;
     background-color: white;
     border-radius:0 0 10px 10px;
     padding-left:10px;
@@ -352,7 +353,7 @@ aside {
     background-color:#F2F2F2;
     border-radius:15px;
     padding:10px 20px 0px 35px;
-    width:410px;
+    width:355px;
     
 }
 
@@ -380,21 +381,22 @@ aside {
     padding-bottom:15px;
     padding-right:40px;
     background-color: white;
-    margin:-1px 0px;
     margin-right:-1px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     line-height: 0px; 
-    width:200px;
-    height:125px;
+    width:150px;
+    height:121px;
     border-radius:5%;  
 }
 
 .pophotelname div h3 {
     line-height:18px
 }
-
+.pophotelname div h4 {
+    line-height:18px;
+}
 #matin {
     background: url("images/hebergements/soleil.jpg") no-repeat;
     border-radius:15px 0 0 15px;
@@ -571,11 +573,14 @@ footer div ul li a {
         margin:auto;
        }
     .container {
-        padding:20px;
+        width:748px;
+        margin:auto;
+        padding:0;
+        
     }
      
     #filters {
-        width:768px;
+        width:748px;
     }
     #filters h3 {
         margin-right:10px
@@ -598,31 +603,33 @@ footer div ul li a {
     }
     
     #hebergements {
-        width:768px;
+        width:748px;
         display:flex;
         flex-direction: column-reverse;
         height:auto;
+        padding:0;
     }
     
     article {
         margin-right:0px;
-        width:768px;
-        padding:10px 10px;
+        width:748px;
+        padding:0;
+        
     }
     
     #hebergementcontent {
         justify-content:space-around;
         margin-top:50px;
+        padding:0;
     }
     
     #afficher {
         margin-left:40px;
     }
     aside {
-        width: 768px;
+        width: 748px;
         padding:0px;
         margin-bottom:50px;
-        padding:10px 10px;
         
     }
     #popcontent {
@@ -634,7 +641,7 @@ footer div ul li a {
         height:145px
     }
     .pophotelname {
-        width:200px;
+        width:190px;
         padding:0;
         height:145px;
         line-height: 14px; 
@@ -667,13 +674,13 @@ footer div ul li a {
         align-items: center;
     }
     #activités {
-        width:678px;
+        width:668px;
         padding-left:10px;
         margin-top:100px;
     }
     
     #activité {
-        width:678px;
+        width:603px;
         height:930px;
         padding-left: 75px;
         grid-template-columns: 1fr 1fr;
@@ -782,18 +789,20 @@ footer div ul li a {
     }
     #logo {
         order:1;
-        padding-left:20px;
+        margin-left:20px;
         
         
     }
 
     #top{
-        padding:10px 30px 0 30px;
-        width:375px;
+        padding:10px 20px 0 20px;
+        width:335px;
+        
     }
     
     #search {
         width:375px;
+        margin-top:30px;
     }
     #boutonsearch {
         display:none;
@@ -802,13 +811,13 @@ footer div ul li a {
         display:inline-block;
         width:50px;
         background-color:  #0065FC;
-        border-radius:0px 0.75em 0.75em 0px;
+        border-radius:0.75em;
         border:none;
         color:white;
        
     }
     #search input {
-        width:205px;
+        width:225px;
     }
     #filters {
         flex-direction: column;
@@ -818,53 +827,91 @@ footer div ul li a {
 
     }
     #buttons {
-        width:355px;
+        width:375px;
         flex-wrap:wrap;    
+        padding:0px;
+        margin:0;
     }
 
     .button{
-        margin-right:0;
+        margin-right:10px;
         justify-content:start;
         margin-bottom:12px;
     }
-
-    #info {
-        word-wrap: break-word;
-        width:375px;
-
+    .button h3 {
+        padding:0px;
+        margin:0;
+        
     }
-
+    #info {
+        align-items: flex-start;
+    }
+    #info h4 {
+        word-wrap: break-word;
+        margin:0;
+        width:300px;
+        margin-right:25px;
+        height:25px;
+        margin-bottom:40px;
+        margin-left:10px;
+        
+    }
+    #logoinfo {
+    
+        
+    }
+    
     #hebergements {
         flex-direction: column;
         width:315px;
         height:auto;
     }
-
+    #hebergements article h3 {
+        margin:0;
+        margin-left:20px;
+        padding:0;
+    }
     article {
         width:375px;
         padding:0;
         margin:0;
+        order:2;
+        background-color: white;
+        margin-top:40px;
+    }
+
+    #hebergementcontent {
+        width:355px;
+        flex-direction: column;
         padding-left:20px;
         padding-top:15px;
         padding-bottom:50px;
-        order:2;
-        background-color:white;
-    }
-    #hebergementcontent {
-        flex-direction: column;
     }
     article h2 {
         margin-bottom: 20px;
+        padding-left:20px;
     }
     .hotel{
-        width:335px;
+        width:325px;
         margin-bottom:10px;
+        
     }
     .hotelname {
-        width:325px;
+        width:310px;
+        height:55px;
+        padding:0;
+        padding-top:15px;
+        padding-left:15px;
+        position: relative;
+        
+    }
+    .hotelname h3 {
+        position:absolute;
+        left:-5px;
+        
     }
     #cannebiere, #port, #mouettes, #mer, #panier, #amina {
-        width:335px
+        width:325px
     }
     #mer, #amina {
         background-size: cover;
@@ -873,19 +920,27 @@ footer div ul li a {
     }
     aside {
         order:1;
-        width:375px;
+        width:335px;
         padding:10px 20px 35px 20px;
         border-radius: 0px;
     }
     .pophotel {
-        margin-bottom:10px;
+        margin: 0 0px 10px 0px;
+        width:335px;
     }
 
-
+    .pophotelname {
+        padding:0;
+        width:185px;
+        height:121px;
+        padding-bottom:15px;
+        padding-left:15px
+    }
     #activités {
-        width:375px;
-        margin-top:20px;
+        width:335px;
+        margin-top:60px;
         padding:0 20px 0 20px;
+     
     }
     #activité {
         width:375px;
