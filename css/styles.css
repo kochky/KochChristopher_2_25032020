@@ -919,7 +919,7 @@ footer div ul li a {
     }
     .hotel{
         box-sizing: border-box;
-        width:320px;
+        width:90%;
         margin: 0 auto;
         margin-bottom:10px;
           
@@ -939,7 +939,8 @@ footer div ul li a {
         
     }
     #cannebiere, #port, #mouettes, #mer, #panier, #amina {
-        width:310px
+        width:100%;
+        background-position: center;
     }
     #mer, #amina {
         background-size: cover;
@@ -964,7 +965,7 @@ footer div ul li a {
     }
     .pophotelname {
         padding:0;
-        width:186px;
+        width:90%;
         height:121px;
         padding-bottom:15px;
         padding-left:15px;
