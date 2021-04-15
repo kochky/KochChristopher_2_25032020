@@ -584,7 +584,7 @@ footer div ul li a {
 @media only screen and (min-width : 768px) and (max-width : 1439px) 
 {
     body {
-        width:768px;
+        width:auto;
         margin:auto;
        }
     .container {
@@ -985,7 +985,7 @@ footer div ul li a {
 /*site fait à partir de 1440px, ceci permet de faire toute la largeur de l'écran si résolution supérieure à 1440px 
 et pouvant garder les proportions de la maquette si résolution inférieure*/
 
-@media only screen and (min-width : 1540px) { 
+@media only screen and (min-width : 1440px) { 
     body {
         width:100%;
         margin:auto;
@@ -1006,7 +1006,7 @@ et pouvant garder les proportions de la maquette si résolution inférieure*/
         width:80%;
     }
     .button{
-        margin-right:10%;
+        margin-right:5%;
         white-space: nowrap; 
     
     }
