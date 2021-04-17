@@ -481,7 +481,7 @@ aside {
 }
 
 #fortdepomègues {
-    background:url("../images/activites/pomergues.jpg") no-repeat;
+    background:url("../images/activites/pomergues\ .jpg") no-repeat;
    border-radius: 15px;
     grid-column-start: 2;
     grid-row:1/span 48;
