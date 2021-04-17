@@ -18,15 +18,11 @@ a {
     font-size:16px;
 }
 
-h1 {
+h1, h2 {
     font-size:20px;
     font-weight:800;
 }
 
-h2 {
-    font-size:20px;
-    font-weight:800;
-}
 h3 {
     font-size:16px;
     font-weight:800;
@@ -196,7 +192,7 @@ margin-bottom:20px;
     left: -2px;  
 
 }
-.button:hover .jauge-remplissage { /*Au survol des filtres, la transition se fait*/
+.button:hover .jauge-remplissage { /*the transition will do when hover*/
     width: 101%;
     height:110%;   
 }
@@ -204,7 +200,7 @@ margin-bottom:20px;
     padding-left:12px;
 }
 
-.jauge-remplissage { /*Permet la transition du changement de background de gauche à droite */
+.jauge-remplissage { /*do the transition of background from left to right */
     transition: all 0.15s linear 0s;
     background-color: #DEEBFF;
     width: 48px;
@@ -248,14 +244,14 @@ margin-bottom:20px;
 
 
 
-/* Pour distinguer les étoiles grises des étoiles bleues*/
+/*to distinguish Blue stars and grey stars*/
 
 .empty{
     color:#F2F2F2
 }
 
 
-/*Hebergements et Les plus populaires*/
+/*"Hebergements" and "Les plus populaires"*/
 
 
 #hebergements {
@@ -312,7 +308,7 @@ article h2 {
 }
     
 #cannebiere {
-    background: url("images/hebergements/canebiere.jpg") no-repeat;
+    background: url("../images/hebergements/canebiere.jpg") no-repeat;
     background-size:cover;
     border-radius:10px 10px 0 0;
     width:235px;
@@ -320,7 +316,7 @@ article h2 {
 }
 
 #port {
-    background: url("images/hebergements/port.jpg") no-repeat;
+    background: url("../images/hebergements/port.jpg") no-repeat;
     background-size:cover;
     border-radius:10px 10px 0 0;
     width:235px;
@@ -328,7 +324,7 @@ article h2 {
 }
     
 #mouettes {
-    background:url("images/hebergements/mouettes.jpg") no-repeat;
+    background:url("../images/hebergements/mouettes.jpg") no-repeat;
     background-size:cover;
     border-radius:10px 10px 0 0;
     width:235px;
@@ -336,7 +332,7 @@ article h2 {
 }
     
 #mer {
-    background: url("images/hebergements/mer.jpg") no-repeat;
+    background: url("../images/hebergements/mer.jpg") no-repeat;
     background-size:235px 115px;
     border-radius:10px 10px 0 0;
     width:235px;
@@ -344,7 +340,7 @@ article h2 {
 }
 
 #panier {
-    background: url("images/hebergements/panier.jpg") no-repeat;
+    background: url("../images/hebergements/panier.jpg") no-repeat;
     background-size:cover;
     border-radius:10px 10px 0 0;
     width:235px;
@@ -352,7 +348,7 @@ article h2 {
 }
     
 #amina {
-    background: url("images/hebergements/amina.jpg") no-repeat;
+    background: url("../images/hebergements/amina.jpg") no-repeat;
     background-size:235px 115px;
     border-radius:10px 10px 0 0;
     width:235px;
@@ -408,7 +404,7 @@ aside {
     line-height:18px;
 }
 #matin {
-    background: url("images/hebergements/soleil.jpg") no-repeat;
+    background: url("../images/hebergements/soleil.jpg") no-repeat;
     border-radius:15px 0 0 15px;
     background-size: cover;
     width:135px;
@@ -417,7 +413,7 @@ aside {
 }
 
 #eau {
-    background: url("images/hebergements/eau.jpg") no-repeat;
+    background: url("../images/hebergements/eau.jpg") no-repeat;
     border-radius:15px 0 0 15px;
     width:135px;
     background-size: cover;
@@ -425,7 +421,7 @@ aside {
 }
 
 #bleublanc {
-    background: url("images/hebergements/bleublanc.jpg") no-repeat;
+    background: url("../images/hebergements/bleublanc.jpg") no-repeat;
     border-radius:15px 0 0 15px;
     background-size: cover;
     width:135px;
@@ -433,7 +429,7 @@ aside {
 }
 
 
-/*Activités*/
+/*"Activités"*/
 
 #activités {
     margin-top:65px;
@@ -475,7 +471,7 @@ aside {
 
 
 #vieuxport {
-    background:url("images/activites/vieuxport.jpg") no-repeat;
+    background:url("../images/activites/vieuxport.jpg") no-repeat;
     border-radius: 15px;
     grid-column-start: 1;
     grid-row: 1/span 89;
@@ -485,7 +481,7 @@ aside {
 }
 
 #fortdepomègues {
-    background:url("images/activites/pomergues\ .jpg") no-repeat;
+    background:url("../images/activites/pomergues.jpg") no-repeat;
    border-radius: 15px;
     grid-column-start: 2;
     grid-row:1/span 48;
@@ -495,7 +491,7 @@ aside {
 }
 
 #ilesdufrioul {
-    background:url("images/activites/frioul.jpg") no-repeat;
+    background:url("../images/activites/frioul.jpg") no-repeat;
     border-radius: 15px;
     grid-column-start: 2;
     grid-row: 56/span 89;
@@ -505,7 +501,7 @@ aside {
 }
 
 #parcnationaldescalanques {
-    background: url("images/activites/calanques.jpg") no-repeat;
+    background: url("../images/activites/calanques.jpg") no-repeat;
     border-radius: 15px;
     grid-column-start:3;
     grid-row: 1/span 89;
@@ -514,7 +510,7 @@ aside {
 }
 
 #notredamedelagarde {
-    background: url("images/activites/notredame.jpg") no-repeat;
+    background: url("../images/activites/notredame.jpg") no-repeat;
     border-radius: 15px;
     grid-column-start:4 ;
     grid-row: 1/span 40;
@@ -524,7 +520,7 @@ aside {
 }
 
 #parclongchamps {
-    background: url("images/activites/longchamps.jpg") no-repeat;
+    background: url("../images/activites/longchamps.jpg") no-repeat;
     border-radius: 15px;
     grid-column-start:4 ;
     grid-row:47/span 89;
@@ -774,7 +770,7 @@ footer div ul li a {
         width:100%;
         flex-wrap:wrap;
         justify-content: space-between;
-        line-height: ;
+        
         }
     #barnav {
         text-align:right;
@@ -1009,8 +1005,10 @@ footer div ul li a {
     }
 }
 
-/*site fait à partir de 1440px, ceci permet de faire toute la largeur de l'écran si résolution supérieure à 1440px 
-et pouvant garder les proportions de la maquette si résolution inférieure*/
+/*
+Website was made from a 1440px model. 
+This mediaquery allow the body to display on the entire screen, even the resolution is above 1440px. 
+And it keeps the proportions correct compared the model  */
 
 @media only screen and (min-width : 1440px) { 
     body {
@@ -1054,9 +1052,7 @@ et pouvant garder les proportions de la maquette si résolution inférieure*/
     #activité a, #activité h3 {
         width:100%;
     }
-    #vieuxport, #fortdepomègues, #ilesdufrioul, #notredamedelagarde, #parclongchamps {
-      
-    }
+    
     article {
         width:60%;
     }
