@@ -77,14 +77,20 @@ input {
     list-style: none;
     display:inline-block;
     font-size:0.7em;
-    margin-left:8%;   
+    margin-left:8%; 
+    padding: 30px 20px 0 20px;  
 }
 .color_blue {
     color:#0065FC;
 }
-
+#barnav ul li:hover {    
+border-top: 1px solid #0065FC;
+}
+#barnav ul li:hover a {    
+   color:#0065FC;
+}
+ 
 .lien_actif  {
-padding: 30px 20px 0 20px;
 border-top: 1px solid #0065FC;
 }
 
