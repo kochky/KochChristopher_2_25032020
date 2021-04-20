@@ -357,6 +357,8 @@ article h2 {
     border-radius:10px 10px 0 0;
     width:235px;
     height:115px;
+    
+    
 }
 
 aside {
@@ -510,6 +512,7 @@ aside {
     grid-column-start:3;
     grid-row: 1/span 89;
     background-size: 225%;
+    background-position: center;
     
 }
 
@@ -762,7 +765,7 @@ footer div ul li a {
         padding-top:20px;
         margin:auto;
         padding:0;
-        min-width: 320px; 
+        min-width: 340px; 
     }
 
     .container {
@@ -802,7 +805,9 @@ footer div ul li a {
         
     }
     #inscription {
-        margin-right:30px;
+        margin-right:10px;
+        top:-30px;
+        position:relative;
     }
     .soulignement {
         width:50%;
