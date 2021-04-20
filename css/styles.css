@@ -625,6 +625,9 @@ footer div ul li a {
         padding:0;
         
     }
+    article h2{
+    margin-left:10px;
+    }
     
     #hebergementcontent {
         justify-content:space-around;
@@ -641,6 +644,7 @@ footer div ul li a {
         margin-bottom:50px;
         
     }
+
     #popcontent {
         display:flex;
         justify-content: space-around;
@@ -671,6 +675,7 @@ footer div ul li a {
     
     #title {
         margin-bottom:30px;
+        margin-left:10px;
         
     }
     #title i {
@@ -789,6 +794,9 @@ footer div ul li a {
         justify-content: space-between;
         width:100%;
         
+    }
+    #inscription {
+        margin-right:30px;
     }
     .soulignement {
         width:50%;
@@ -1008,7 +1016,7 @@ footer div ul li a {
 
 /*
 Website was made from a 1440px model. 
-This mediaquery allow the body to display on the entire screen, even the resolution is above 1440px. 
+This mediaquery allows the body to display on the entire screen, even the resolution is above 1440px. 
 And it keeps the proportions correct compared the model  */
 
 @media only screen and (min-width : 1441px) { 
