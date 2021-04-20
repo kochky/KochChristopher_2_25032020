@@ -16,6 +16,7 @@ a {
     color:black;
     text-decoration:none;
     font-size:16px;
+   
 }
 
 h1, h2 {
@@ -68,26 +69,23 @@ input {
     text-align:right;
     padding-top:20px;
     position:relative; 
-    margin-bottom:-35px;  
+    margin-bottom:-35px; 
+    top:-35px; 
 }
 
 #barnav ul li {
     list-style: none;
     display:inline-block;
     font-size:0.7em;
-    margin-left:20px; 
+    margin-left:8%;   
+}
+.color_blue {
+    color:#0065FC;
 }
 
-#barnav ul li a:hover{
-    border-top:1px solid #0065FC;
-    color:#0065FC;
-    padding-top: 33px;
-}
-.lien_actif {
-    border-top:1px solid #0065FC;
-    color:#0065FC;
-    padding-top: 33px;
-    cursor:pointer
+.lien_actif  {
+padding: 30px 20px 0 20px;
+border-top: 1px solid #0065FC;
 }
 
 #logo {
@@ -573,7 +571,7 @@ footer div ul li a {
 
 
 
-/*version mobile*/
+/*version tablette et mobile*/
 
 
 
@@ -764,7 +762,9 @@ footer div ul li a {
     #hebergementlink ,#activitélink {
         display:none;
     }
-
+    .lien_actif {
+        border:none;
+    }
     header {
         display:flex;
         width:100%;
@@ -776,6 +776,7 @@ footer div ul li a {
         text-align:right;
         padding-top:0px;
         order:2;
+        top:0px;
     }
     #barnav ul {
         margin:0;
@@ -1010,7 +1011,7 @@ Website was made from a 1440px model.
 This mediaquery allow the body to display on the entire screen, even the resolution is above 1440px. 
 And it keeps the proportions correct compared the model  */
 
-@media only screen and (min-width : 1440px) { 
+@media only screen and (min-width : 1441px) { 
     body {
         width:100%;
         margin:auto;
@@ -1030,19 +1031,7 @@ And it keeps the proportions correct compared the model  */
         margin:auto;
         width:80%;
     }
-    .button{
-        margin-right:5%;
-        white-space: nowrap; 
     
-    }
-    #filters h3 {
-        padding-right:100px;
-    }
-    .button h3 {
-        padding:0;
-        width:50px;
-        padding-left:20px;
-    }
     #activités {
         width:100%;
     }
@@ -1079,6 +1068,5 @@ And it keeps the proportions correct compared the model  */
     .pophotel, .pophotelname {
         width:80%;
     }
-
-
+    
 }
