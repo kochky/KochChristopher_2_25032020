@@ -98,6 +98,8 @@ border-top: 1px solid #0065FC;
 #logo {
     margin:0;
     margin-bottom:30px;
+    position:relative;
+    top:-25px;
     
 }
 .onlymobile {
@@ -280,7 +282,7 @@ article h2 {
 }
 
 #afficher {
-    margin-top:15px;
+    margin-top:20px;
 }
 
 #hebergementcontent{
@@ -340,7 +342,7 @@ article h2 {
     
 #mer {
     background: url("../images/hebergements/mer.jpg") no-repeat;
-    background-size:235px 115px;
+    background-size:cover;
     border-radius:10px 10px 0 0;
     width:235px;
     height:115px;
@@ -356,7 +358,7 @@ article h2 {
     
 #amina {
     background: url("../images/hebergements/amina.jpg") no-repeat;
-    background-size:235px 115px;
+    
     border-radius:10px 10px 0 0;
     width:235px;
     height:115px;
@@ -591,12 +593,13 @@ footer div ul li a {
 @media only screen and (min-width : 768px) and (max-width : 1439px) 
 {
     body {
-        width:auto;
-        margin:auto;
+        width:100%;
+        margin:0 auto;
+
        }
     .container {
-        width:748px;
-        margin:auto;
+        width:90%;
+        margin:0 auto;
         padding:0;
         
     }
@@ -625,34 +628,48 @@ footer div ul li a {
     }
     
     #hebergements {
-        width:748px;
+        width:100%;
         display:flex;
         flex-direction: column-reverse;
         height:auto;
         padding:0;
     }
+    #hebergementcontent a {
+        width:30%;
+    }
+    .hotel {
+        width:100%;
+    }
+    .hotelname {
+        width:98%;
+    }
+    
     
     article {
         margin-right:0px;
-        width:748px;
+        width:100%;
         padding:0;
         
     }
     article h2{
-    margin-left:10px;
+    margin-left:2%;
     }
-    
+
     #hebergementcontent {
         justify-content:space-around;
         margin-top:50px;
         padding:0;
     }
-    
+    #cannebiere, #port, #mouettes, #mer, #panier, #amina {
+        width:100%;
+        background-position: center;
+    }
+
     #afficher {
         margin-left:40px;
     }
     aside {
-        width: 748px;
+        width: 100%;
         padding:0px;
         margin-bottom:50px;
         
@@ -663,11 +680,11 @@ footer div ul li a {
         justify-content: space-around;
     }
     .pophotel {
-        width:230px;
+        width:90%;
         height:145px
     }
     .pophotelname {
-        width:190px;
+        width:90%;
         padding:0;
         height:148px;
         line-height: 14px; 
@@ -695,19 +712,22 @@ footer div ul li a {
         margin:auto;
         
     }
+    aside h2 {
+        margin-left:2%
+    }
+    
     aside a {
         display:flex;
         flex-direction: column;
         align-items: center;
     }
     #activités {
-        width:668px;
-        padding-left:10px;
+        width:100%;
         margin-top:100px;
     }
     
     #activité {
-        width:603px;
+        width:90%;
         height:930px;
         padding-left: 75px;
         grid-template-columns: 1fr 1fr;
@@ -715,9 +735,12 @@ footer div ul li a {
         }
     
     #activité a {
-        width:250px;
+        width:100%;
         margin-top:30px;
 
+    }
+    #activité h3{
+        width:100%;
     }
     
     #vieuxport {
@@ -780,6 +803,10 @@ footer div ul li a {
     #hebergementlink ,#activitélink {
         display:none;
     }
+    #logo {
+        top:0px;
+    }
+    
     .lien_actif {
         border:none;
     }
@@ -810,7 +837,7 @@ footer div ul li a {
     }
     #inscription {
         margin-right:10px;
-        top:-30px;
+        top:-40px;
         position:relative;
     }
     .soulignement {
