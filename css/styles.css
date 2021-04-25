@@ -549,6 +549,7 @@ aside {
 
 
 footer{
+    overflow-x: hidden;
      background-color:#F2F2F2 ;
      margin:auto;
     padding-top:20px;
@@ -598,21 +599,22 @@ footer div ul li a {
 
        }
     .container {
-        width:90%;
+        width:95%;
         margin:0 auto;
         padding:0;
         
     }
      
     #filters {
-        width:748px;
+        width:100%;
+        flex-wrap:wrap
     }
     #filters h3 {
         margin-right:10px
     }
 
     .button {
-    width: 160px;
+    width: 155px;
     margin-right:10px;
     }
     
@@ -635,7 +637,8 @@ footer div ul li a {
         padding:0;
     }
     #hebergementcontent a {
-        width:30%;
+        width:29%;
+        
     }
     .hotel {
         width:100%;
@@ -646,7 +649,7 @@ footer div ul li a {
     
     
     article {
-        margin-right:0px;
+        margin:0px;
         width:100%;
         padding:0;
         
@@ -656,7 +659,8 @@ footer div ul li a {
     }
 
     #hebergementcontent {
-        justify-content:space-around;
+       width:95%;
+       margin:0 auto;
         margin-top:50px;
         padding:0;
     }
@@ -729,7 +733,7 @@ footer div ul li a {
     #activité {
         width:90%;
         height:930px;
-        padding-left: 75px;
+        margin:0 auto;
         grid-template-columns: 1fr 1fr;
         grid-template-rows:1fr repeat(27,1fr) 
         }
@@ -774,16 +778,49 @@ footer div ul li a {
     }
    footer {
     width:100%;
+    margin:0 auto;
     }
     footer div {
-        width:748px;
-        justify-content: space-around;
-        margin:auto;
+        width:95%;
+        justify-content: space-between;
+        margin-right:5% auto;
+       
     }
 }
 
 
-
+@media screen and (orientation:landscape) and  (max-width : 850px) {
+    #hebergementlink ,#activitélink {
+        display:none;
+    }
+    #barnav ul li:hover {    
+        border:none
+    }
+    
+    .lien_actif {
+        border:none;
+        
+    }
+    .onlymobile {
+        display:flex;
+        order:3;
+        justify-content: space-around;
+        width:100%;
+        
+    }
+    .soulignement {
+        width:50%;
+        text-align:center;
+        border-bottom:3px solid #F2F2F2;
+        padding-bottom:10px;
+    }
+    .soulignement:hover{
+        justify-content: space-around;
+        border-bottom:3px solid #0065FC;
+        color:#0065FC
+        
+    }
+}
 
 @media only screen and (max-width : 767px) 
 {
@@ -803,9 +840,7 @@ footer div ul li a {
     #hebergementlink ,#activitélink {
         display:none;
     }
-    .test {
-        display:none;
-    }
+    
     #logo {
         top:0px;
     }
@@ -871,6 +906,11 @@ footer div ul li a {
         padding:10px 0px 0 0px;
         width:95%;
         margin:auto;
+        
+    }
+    #top h1, #top h4 {
+        margin-left:5%;
+        
         
     }
     
@@ -970,6 +1010,7 @@ footer div ul li a {
     article h2 {
         margin-bottom: 20px;
         padding-left:20px;
+        
     }
     .hotel{
         box-sizing: border-box;
@@ -1016,6 +1057,8 @@ footer div ul li a {
     #title {
         
         margin-left:20px;
+        margin-top:15px;
+        margin-bottom:10px;
     }
     .pophotelname {
         padding:0;
