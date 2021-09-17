@@ -7,5 +7,5 @@ Création d'une page web fidèle à une maquette donnée + animations CSS + resp
 ### Languages used
 
 * HTML5
-* SCSS
+* CSS
 
